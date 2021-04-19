@@ -1,6 +1,10 @@
+/*package whatever //do not write package name here */
+
+import java.io.*;
+import java.util.*;
 public class Problem {
-    final int N = 4;
-  
+    Scanner sc=new Scanner(System.in);
+    int N=sc.nextInt();
   
     boolean Safe(int mat[][], int row, int col)
     {
@@ -77,6 +81,19 @@ public class Problem {
     public static void main(String args[])
     {
         Problem backtrack = new Problem();
-        backtrack.chk();
+        backtrack.chk(); 
+        /*
+        
+        4
+        0  0  1  0 
+        1  0  0  0 
+        0  0  0  1 
+        0  1  0  0  
+        
+        2
+        not possible
+        
+        */
+        
     }
 }
